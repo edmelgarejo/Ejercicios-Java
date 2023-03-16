@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg00.ejercicios.java;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author W10
+ */
+public class EjerciciosJava {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     int numero1;
+     int numero2;
+     //System.out es el comando para la salida de datos.   
+     System.out.println("Introduzca dos numeros enteros positivos");
+     //Scanner permite el ingreso de dato y le asigne el nombre leer1   
+     Scanner leer1 = new Scanner (System.in);
+     //En esta lineo le asigno el valor ingresado a numero1
+        numero1 = leer1.nextInt();
+     //Mismo procedimiento que la linea 25, solamente que se la cambia el nombre a leer2
+     Scanner leer2 = new Scanner (System.in);
+     //Se le asigna el valor ingresado en leer2 a numero2
+        numero2= leer2.nextInt();
+     // La variable suma, realiza la operación
+        int suma = numero1 + numero2;
+    //Se produce la salida de los datos ingresados.
+        System.out.println("La suma de los numeros es " + suma);
+    }
+    
+}
