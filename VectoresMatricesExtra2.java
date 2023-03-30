@@ -20,15 +20,15 @@ public class VectoresMatricesExtra2 {
         // TODO code application logic here
      Scanner leer = new Scanner (System.in);
      
-        System.out.println("Introduzca el tamaño de los vectores");
+        System.out.println("Introduzca el tamaño de los vectores/Estoy realizando un cambio en la rama Experimento");
         int n = leer.nextInt();
         
         int [] vectorA = new int [n];
         int [] vectorB = new int [n];
         
         for (int i = 0; i < n; i++) {
-            vectorA [i] = (int)(Math.random()*9+1);
-            vectorB [i] = (int)(Math.random()*9+1);
+            vectorA [i] = (int)(Math.random()*1+1);
+            vectorB [i] = (int)(Math.random()*1+1);
         }
         for (int i = 0; i < n; i++) {
             System.out.print("["+vectorA [i]+"]");
