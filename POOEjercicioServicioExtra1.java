@@ -3,25 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pooejercicioextra3;
+package pooejercicioservicioextra1;
 
-import pooejercicioextra3.entidad.Juego;
+import pooejercicioservicioextra1.entidad.Raices;
+import pooejercicioservicioextra1.entidad.servicio.RaicesServicio;
 
 /**
  *
  * @author MarinaElizabeth
  */
-public class POOEjercicioExtra3 {
+public class POOEjercicioServicioExtra1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-  Juego j1 = new Juego ();
-  j1.cargar();
-  j1.
-     
+        
+    RaicesServicio RS = new RaicesServicio ();
+    Raices r1 = RS.CrearRaiz();
+    RS.calcular(r1,RS.getDiscriminante(r1));
     }
     
 }

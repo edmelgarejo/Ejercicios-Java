@@ -3,25 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pooejercicioextra3;
+package pooejercicioextra5;
 
-import pooejercicioextra3.entidad.Juego;
+import pooejercicioextra5.entidad.Empleado;
 
 /**
  *
  * @author MarinaElizabeth
  */
-public class POOEjercicioExtra3 {
+public class POOEjercicioExtra5 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-  Juego j1 = new Juego ();
-  j1.cargar();
-  j1.
-     
+        Empleado salario = new Empleado();
+        salario.calcular_aumento();
     }
     
 }

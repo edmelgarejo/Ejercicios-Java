@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pooejercicioextra3.entidad;
-
-
-
+package pooejercio3extrabis.entidad;
 
 import java.util.Scanner;
 
-
-
-public class Juego{
-//    Scanner leer = new Scanner(System.in);
+/**
+ *
+ * @author MarinaElizabeth
+ */
+public class Juego {
+     //Scanner leer = new Scanner(System.in);
     public String jugador1;
     public String jugador2;
     public int numero1;
@@ -42,15 +41,15 @@ public class Juego{
     }
     public void cargar(){
         Scanner leer = new Scanner (System.in);
-        System.out.println("Introduzca su nombre (Jugador N°1");
+        System.out.println("Introduzca su nombre (Jugador NÂ°1");
         jugador1 = leer.nextLine();
-        System.out.println("Introduzca Su nombre (Jugador N°2");
+        System.out.println("Introduzca Su nombre (Jugador NÂ°2");
         jugador2 = leer.nextLine();
     }
   
     public void iniciar_juego(){
         Scanner leer = new Scanner (System.in);
-        System.out.println("�Quien comienza?");
+        System.out.println("¿Quien comienza?");
         System.out.println("1-" + jugador1);
         System.out.println("2-" + jugador2);
         opcion = leer.nextInt();
@@ -76,7 +75,6 @@ public class Juego{
                         System.out.println("Le quedan " + contador + " intentos");
                         System.out.println("Introduzca otro numero");
                         numero2 = leer.nextInt();
-       
                     }
                 }
             } else if (opcion == 2) {
@@ -103,8 +101,8 @@ public class Juego{
                 }
             }
 
-        }while(contadorJugador1 == 3 || contadorJugador2 == 3);
+        }while(contadorJugador1 != 3 || contadorJugador2 != 3);
         System.out.println("Ganados" + contadorJugador1);
         System.out.println("Ganados" + contadorJugador2);
-    }
+    }   
 }

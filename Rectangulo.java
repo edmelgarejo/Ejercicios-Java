@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pooejercicio4.entidad;
+package pooejercicioextra6.entidad;
 
 import java.util.Scanner;
 
@@ -12,57 +12,40 @@ import java.util.Scanner;
  * @author MarinaElizabeth
  */
 public class Rectangulo {
-    private double base;
-    private double altura;
+   public int lado1;
+   public int lado2;
 
     public Rectangulo() {
     }
 
-    public Rectangulo(double base, double altura) {
-        this.base = base;
-        this.altura = altura;
+    public Rectangulo(int lado1, int lado2) {
+        this.lado1 = lado1;
+        this.lado2 = lado2;
     }
-
-    public double getBase() {
-        return base;
-    }
-
-    public double getAltura() {
-        return altura;
-    }
-
-    public void setBase(double base) {
-        this.base = base;
-    }
-
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
+ 
+   public void calcular_area(){
+       Scanner leer = new Scanner (System.in);
+       System.out.println("Introduzca la base de rectangulo");
+       lado1 = leer.nextInt();
+       
+       System.out.println("Introduzca el altura del rectangulo");
+       lado2 = leer.nextInt();
+       
+       double area = lado1*lado2;
+       System.out.println("El area del rectangulo es "+ area);
+       
+       for (int i = 0; i < 4; i++) {
+           for (int j = 0; j < 6; j++) {
+               if (i != 0 || j != 0 || i != 3 || j != 5){
+                   System.out.print(" * ");
+               }else{
+                   System.out.print(" ");
+               }
+           }
+           System.out.println("");
+       }
+       
+   }
     
-    public void cargarDatos (){
-        Scanner leer = new Scanner (System.in);
-        System.out.println("Ingrese la base del rectangulo");
-        base = leer.nextDouble();
-        System.out.println("Ingrese la altura del rectangulo");
-        altura = leer.nextDouble();
-    }
-    public double base (){
-        return (base*altura);
-    }
-    public double perimetro(){
-        return ((base+altura)*2);
-    }
-    public void dibujar(){
     
-        for (int i = 0; i < base; i++) {
-                for (int j = 0; j < altura ; j++) {
-                   if (i == 0 || i == base-1 || j == 0 || j == altura-1){
-                       System.out.print("* ");
-                   }else System.out.print("  "); 
-                 }
-                System.out.println("");
-        }
-    }
 }
-
-

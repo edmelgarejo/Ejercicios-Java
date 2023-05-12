@@ -3,25 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pooejercicioextra3;
+package pooejercicioservicioextra2;
 
-import pooejercicioextra3.entidad.Juego;
+import pooejercicioservicioextra2.entidades.NIF;
+import pooejercicioservicioextra2.entidades.Servicio.NIFServicio;
 
 /**
  *
  * @author MarinaElizabeth
  */
-public class POOEjercicioExtra3 {
+public class POOEjercicioServicioExtra2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-  Juego j1 = new Juego ();
-  j1.cargar();
-  j1.
-     
-    }
-    
+        
+        NIFServicio nifs = new NIFServicio ();
+        
+        NIF n1 = nifs.crearNIF();
+        nifs.mostrar(n1);
+    } 
 }
